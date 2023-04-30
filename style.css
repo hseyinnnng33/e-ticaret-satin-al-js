@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Asap&family=Black+Han+Sans&family=Faster+One&family=Inter&family=Lexend+Deca:wght@600&family=Manrope&family=Nosifer&family=Orienta&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,900&family=Russo+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* 
+search <i class="fa-solid fa-magnifying-glass"></i>
+kullanıcı <i class="fa-solid fa-user"></i>
+bars <i class="fa-solid fa-bars"></i>
+barx <i class="fa-solid fa-xmark"></i>
+truck <i class="fa-solid fa-truck-fast"></i>
+sepet <i class="fa-solid fa-cart-shopping"></i>
+*/
+
+.navbar{
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+    /* box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05); */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    /* border: 1px solid #f2e5da; */
+    border-bottom: 1px solid #f3eae2;
+}
+
+.navbar .icerik{
+    max-width: 1200px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.icerik h2{
+    font-size: 16px;
+}
+
+.icerik ul{
+    display: flex;
+}
+
+.icerik ul li{
+    padding: 0 20px;
+}
+
+.icerik ul li a{
+    color: #000000;
+    font-size: 15px;
+}
+
+.icerik ul li a:hover{
+    border-bottom: 2px solid #969393;
+}
+
+.icerik .sepet-arama{
+    display: flex;
+    align-items: center;
+}
+
+.sepet-arama .arama{
+    background-color: #f0ecec;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+.sepet-arama .arama input{
+    outline: none;
+    border: none;
+    padding-right: 15px;
+    font-size: 14px;
+    color: #969393;
+    border-radius: 5px;
+    background-color: #f0ecec;
+}
+
+.sepet-arama .hesap{
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.urunler{
+    margin-top: 2px;
+    width: 100%;
+    height: 50px;
+    box-shadow: rgba(91, 89, 91, 0.2) 0px 7px 29px 0px;
+    border-bottom: 1px solid #f3eae2;
+}
+
+.urunler .icerik-1{
+    max-width: 1200px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    align-items: center;
+    padding: 12px 0;
+    position: relative;
+}
+
+.urunler .icerik-1 a{
+    color: #000000;
+    font-weight: 500;
+}
+
+.urunler .icerik-1 a:hover{
+    border-bottom: 2px solid #000000;
+}
+
+#telefon{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f0ecec;
+    padding: 20px 20px;
+    border-radius: 5px;
+}
+
+#telefon.active{
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#telefon a{
+    padding: 6px 10px;
+}
+
+#telefon-1{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f0ecec;
+    padding: 20px 20px;
+    border-radius: 5px;
+}
+
+#telefon-1.active{
+    display: block;
+    display: flex;
+}
+
+#telefon-1 a {
+    padding: 6px 10px;
+}
+
+.kampanya{
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.kampanya h2{
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.kampanya .icerik-2{
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.kampanya .icerik-2 .ilk{
+    width: 390px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* background-color: rgb(47, 217, 255); */
+    background-color: #0d2643;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.kampanya .icerik-2 .ilk .div{
+    width: 180px;
+    margin: 5px;
+    height: 180px;
+    position: relative;
+}
+
+.div h2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 14px;
+    padding-left: 4px;
+    padding: 5px;
+    /* background-color: #493fbe; */
+    background-color: greenyellow;
+    /* color: #fff; */
+    box-shadow: rgba(54, 53, 53, 0.2) 0px 7px 29px 0px;
+}
+
+.kampanya .icerik-2 .ilk .div img{
+    width: 180px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+.kampanya .icerik-2 .ilk .div img:hover{
+    transform: scale(1.1);
+}
+
+/* .ilk-1 img{
+    width: 200px;
+} */
+
+.urunler-1{
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.urunler-1 h2{
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.urunler-1 .icerik-3{
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.urunler-1 .icerik-3 .ilk{
+    position: relative;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5px;
+    border: 1px solid #f0ecec;
+    width: 270px;
+    margin: 5px 10px;
+}
+
+.urunler-1 .icerik-3 .ilk img{
+    width: 200px;
+}
+
+.urunler-1 .icerik-3 .ilk .alt{
+    font-size: 18px;
+    background-color: greenyellow;
+    border-bottom-left-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.urunler-1 .icerik-3 .ilk h2{
+    margin: 5px 0;
+}
+
+.urunler-1 .icerik-3 .ilk .al{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #493fbe;
+}
+
+.urunler-1 .icerik-3 .ilk .al h2{
+    color: #fff;
+}
+
+.footer{
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.footer .icerik-4{
+    max-width: 1200px;
+    margin:  0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.footer .icerik-4 .genel{
+    width: 1200px;
+    background-color: #f1f1f1;  
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 10px; 
+    padding: 15px;
+}
+
+.footer .icerik-4 .genel .genel-title{
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.content-container .sorular{
+    padding: 18px 0;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    border-bottom: 1px solid #333;
+}
+
+.sorular::after{
+    content: '+';
+    position: absolute;
+    right: 10px;
+}
+
+.cevap{
+    padding-top: 10px;
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.genel .content-container.active .cevap{
+    height: 90px;
+}
+
+.genel .content-container.active .sorular::after{
+    content: '-';
+}
+
+.alt-bilgi{
+    width: 100%;
+}
+
+.alt-bilgi .icerik{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.alt-bilgi .icerik p{
+    margin: 5px 0;
+}
+
+.alt-bilgi .icerik h2{
+    text-align: center;
+}
+
+.bilgi-bars{
+    display: none;
+    height: 100%;
+}
+
+.kart{
+    display: none;
+}
+
+.fa-bars,.fa-xmark{
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+
+
+
+@media only screen and (max-width: 900px){
+    html,body{
+        overflow-x: hidden;
+       }
+
+       .navbar .icerik .sepet-arama{
+        display: none;
+       }
+
+       .navbar .icerik ul{
+        display: none;
+       }
+
+       .navbar .icerik{
+        display: flex;
+        justify-content: center;
+       }
+
+       .navbar .icerik h2{
+        font-size: 18px;
+       }
+       
+       .bilgi-bars{
+        display: block;
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        padding: 15px 5px;
+       }
+
+       .bilgi-bars .sepet-arama .arama .input-nav{
+        width: 200px;
+       }
+
+       .bilgi-bars .sepet-arama{
+        display: flex;
+        align-items: center;
+       }
+
+       .fa-xmark{
+        display: none;
+       }
+
+       .kart.active1{
+        display: block;
+       }
+
+       .kart{
+        position: relative;
+        z-index: 999;
+       }
+
+       .kart .bilgiler{
+        margin-top: 10px;
+        margin: 8px;
+        padding: 5px;
+        background-color: #333;
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 5px;
+       }
+
+       .kart .bilgiler a{
+        color: #fff;
+        padding: 8px 15px;
+       }
+
+       .urunler .icerik-1{
+        display: none;
+       }
+    
+    }
+
+.navbar .icerik{
+    position: relative;
+}
+
+.navbar .icerik .hesap-tutar{
+    position: fixed;
+    top: 1%;
+    right: 0%;
+    width: 400px;
+    background-color: #0d2643;
+    z-index: 2;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    display: none;
+}
+
+.navbar .icerik .hesap-tutar.active{
+    display: block;
+}
+
+.navbar .icerik .hesap-tutar .bir{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .icerik .hesap-tutar .bir{
+    color: #fff;
+    font-size: 20px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.navbar .icerik .hesap-tutar h2{
+    color: #fff;
+ }
+
+.navbar .icerik .hesap-tutar span{
+   color: #fff;
+   font-weight: bold;
+   margin: 5px 0;
+   font-size: 17px;
+}
+
+
+.navbar .icerik .hesap-tutar p{
+    color: #fff;
+    margin: 5px 0;
+    font-size: 17px;
+}
+
+.sil-btn{
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.sil-btn button{
+   border: 1px solid #fff;
+   border-radius: 50%;
+   padding: 2px 12px;
+   background-color: transparent;
+   font-size: 20px;
+   cursor: pointer;
+   color: #fff;
+   margin-left: 10px;
+}
+
+.ilk-1{
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ilk-1 img{
+    width: 1100px;
+}
+
+.ilk-1 button{
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    background-color: #493fbe;
+    display: flex;
+    align-items: center;
+}
+
+.ilk-1 button i{
+   color: #fff;
+}
+
+.sepet-goster{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
